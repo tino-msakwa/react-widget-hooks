@@ -5,9 +5,6 @@ const Search = () => {
   const [term, setTerm] = useState("");
   const [result, setResult] = useState([]);
 
-  console.log("I run at the initial render!");
-
-  useEffect(() => {
       const search = async () => {
           const { data } = await axios.get('https://en.wikipedia.org/w/api.php', {
               params: {
@@ -25,7 +22,6 @@ const Search = () => {
 
       search();
   }, [term]);
-
   return (
     <div>
       <div className="ui form">
