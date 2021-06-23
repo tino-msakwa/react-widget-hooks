@@ -1,7 +1,6 @@
 import React from 'react';
 import Accordion from './components/Accordion.js';
-import Search from "./components/Search.js";
-
+import Search from './components/Search.js';
 const items = [
     {
         title: "What is React?",
